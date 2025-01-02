@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class kosPhoto extends Model
+class KosPhoto extends Model
 {
     use HasFactory;
 

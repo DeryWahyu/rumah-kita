@@ -14,8 +14,8 @@ class HomeController extends Controller
         $kosList = Kos::query()
             ->when($search, function ($query, $search) {
                 $query->where('nama', 'like', '%' . $search . '%')
-                      ->orWhere('lokasi', 'like', '%' . $search . '%')
-                      ->orWhere('harga', 'like', '%' . $search . '%');
+                    ->orWhere('lokasi', 'like', '%' . $search . '%')
+                    ->orWhere('harga', 'like', '%' . $search . '%');
             })
             ->get();
 
